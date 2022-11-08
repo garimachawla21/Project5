@@ -109,7 +109,3 @@ workflows:
           requires:
             - aws-eks/create-cluster
             - deploy-application
-      - aws-eks/delete-cluster:
-          cluster-name: capstone-project1
-          requires:
-            - test-cluster
