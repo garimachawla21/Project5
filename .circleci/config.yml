@@ -16,8 +16,8 @@ jobs:
             sudo chmod +x /bin/hadolint
       - run:
           name: Run Lint
-          command: |
-            hadolint Dockerfile
+           command: |
+            hadolint Dockerfile 
   docker-build:
     docker:
       - image: circleci/node:13.8.0
