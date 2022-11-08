@@ -16,7 +16,8 @@ jobs:
             sudo chmod +x /bin/hadolint
       - run:
           name: Run Lint
-           command: |
+          command: |
+          
             hadolint Dockerfile 
   docker-build:
     docker:
