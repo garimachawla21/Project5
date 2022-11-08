@@ -43,9 +43,9 @@ jobs:
           name: Push Docker Image to Docker Hub
           command: |
             export IMAGE_NAME=capstone-project
-            docker build -t project5garima/$IMAGE_NAME .
+            docker build -t gchawla21/$IMAGE_NAME .
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
-            docker push project5garima/$IMAGE_NAME
+            docker push gchawla21/$IMAGE_NAME
   deploy-application:
     docker:
       - image: 'cimg/python:3.10'
