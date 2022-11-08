@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: capstone-project
-        image: project5garima/capstone-project
+        image: gchawla21/capstone-project
         imagePullPolicy: Always
         resources:
           requests:
