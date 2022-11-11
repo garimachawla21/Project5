@@ -1,14 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: capstone-project
+  name: capstone-project5
   labels:
-    app: capstone-project
+    app: capstone-project5
 
 spec:
   selector:
     matchLabels:
-      app: capstone-project
+      app: capstone-project5
   
   replicas: 1
   strategy:
@@ -19,12 +19,12 @@ spec:
   template:
     metadata:
       labels:
-        app: capstone-project
+        app: capstone-project5
     
     spec:
       containers:
-      - name: capstone-project
-        image: gchawla21/capstone-project
+      - name: capstone-project5
+        image: gchawla21/capstone-project5
         imagePullPolicy: Always
         resources:
           requests:
