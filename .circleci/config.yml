@@ -30,7 +30,7 @@ jobs:
       - run:
           name: Build Docker Image
           command: |
-            export IMAGE_NAME=capstone-project5
+            export IMAGE_NAME=capstoneproject6
             docker build -t project5garima/$IMAGE_NAME .
   docker-push:
     docker:
@@ -42,7 +42,7 @@ jobs:
       - run:
           name: Push Docker Image to Docker Hub
           command: |
-            export IMAGE_NAME=capstone-project5
+            export IMAGE_NAME=capstoneproject6
             docker build -t gchawla21/$IMAGE_NAME .
             docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD 
             docker push gchawla21/$IMAGE_NAME
@@ -96,7 +96,3 @@ workflows:
       - docker-push:
           requires:
             - docker-build
-      - aws-eks/create-cluster:
-          cluster-name: capstone-project5
-          requires:
-            - docker-push
